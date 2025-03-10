@@ -1,18 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/img"
-    android:gravity="center"
-    android:padding="16dp">
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
+    <!-- Toolbar for the Activity -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="Food Categories"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <!-- Welcome message -->
     <TextView
         android:id="@+id/welcomeText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome, User!"
         android:textSize="20sp"
+        android:textColor="#333"
         android:textStyle="bold"
-        android:textColor="@android:color/black"/>
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Welcome to Our App, Enjoy Exploring!"/>
+
+    <!-- Food category buttons -->
+    <Button
+        android:id="@+id/categoryNorthIndian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="North Indian Cuisine"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/categorySouthIndian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="South Indian Cuisine"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/categoryStreetFood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Street Food"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/categoryNonVegetarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Non-Vegetarian Cuisine"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/categoryVegetarian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vegetarian Cuisine"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
 </LinearLayout>

@@ -29,6 +29,8 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LogoutActivity" />
+        <activity android:name=".FoodDetailsActivity"></activity>
+
 
     </application>
 

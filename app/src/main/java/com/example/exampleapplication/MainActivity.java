@@ -1,14 +1,5 @@
 package com.example.exampleapplication;
 
-import android.os.Bundle;
-
-import androidx.activity.EdgeToEdge;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,7 +12,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button button = findViewById(R.id.openPageButton);
+        // Updated Button ID to match the one in activity_main.xml
+        Button button = findViewById(R.id.navigateButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -42,4 +42,9 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="gulab_jamun">gulab_jamun</string>
+    <string name="idli">idli</string>
+    <string name="welcome_user">Welcome, User!</string>
+    <string name="mochi_ice_cream">mochi_ice_cream</string>
+    <string name="duck_confit">duck_confit</string>
 </resources>
