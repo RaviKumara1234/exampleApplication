@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/cuisineTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="North Indian Cuisine"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Food Image 1 -->
+    <ImageView
+        android:id="@+id/foodImage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/idli"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="idli"/>
+
+    <!-- Food Image 2 -->
+    <ImageView
+        android:id="@+id/foodImage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chole"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="chole"/>
+
+    <!-- Food Image 3 -->
+    <ImageView
+        android:id="@+id/foodImage3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jeerarice"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="jeerarice"/>
+
+    <!-- Food Image 4 -->
+    <ImageView
+        android:id="@+id/foodImage4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kheer"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="kheer"/>
+
+    <!-- Food Image 5 -->
+    <ImageView
+        android:id="@+id/foodImage5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/palakpaneer"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="palakpaneer"/>
+
+    <!-- Food Image 6 -->
+    <ImageView
+        android:id="@+id/foodImage6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/naan"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="naan"/>
+
+    <!-- Food Image 7 -->
+    <ImageView
+        android:id="@+id/foodImage7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paneer"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="paneer"/>
+
+    <!-- Food Image 8 -->
+    <ImageView
+        android:id="@+id/foodImage8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tandoori"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="tandoori"/>
+
+    <!-- Food Image 9 -->
+    <ImageView
+        android:id="@+id/foodImage9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vegbiriyani"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="vegbiriyani"/>
+
+    <!-- Food Image 10 -->
+    <ImageView
+        android:id="@+id/foodImage10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dhoklajpeg"
+        android:layout_marginBottom="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="dhoklajpeg"/>
+
+</LinearLayout>

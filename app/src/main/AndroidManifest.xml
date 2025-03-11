@@ -29,8 +29,12 @@
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LogoutActivity" />
-        <activity android:name=".FoodDetailsActivity"></activity>
 
+        <activity android:name=".NorthIndianCuisineActivity" />
+        <activity android:name=".SouthIndianCuisineActivity" />
+        <activity android:name=".StreetFoodCuisineActivity" />
+        <activity android:name=".NonVegetarianCuisineActivity" />
+        <activity android:name=".VegetarianCuisineActivity" />
 
     </application>
 

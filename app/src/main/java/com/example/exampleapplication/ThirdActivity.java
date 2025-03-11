@@ -36,35 +36,21 @@ public class ThirdActivity extends AppCompatActivity {
         Button btnVegetarian = findViewById(R.id.categoryVegetarian);
 
         // Set click listeners for each category button
-        btnNorthIndian.setOnClickListener(v -> {
-            Intent intent = new Intent(ThirdActivity.this, FoodDetailsActivity.class);
-            intent.putExtra("CATEGORY", "North Indian");
-            startActivity(intent);
-        });
+        btnNorthIndian.setOnClickListener(v -> navigateToActivity(NorthIndianCuisineActivity.class));
 
-        btnSouthIndian.setOnClickListener(v -> {
-            Intent intent = new Intent(ThirdActivity.this, FoodDetailsActivity.class);
-            intent.putExtra("CATEGORY", "South Indian");
-            startActivity(intent);
-        });
+        btnSouthIndian.setOnClickListener(v -> navigateToActivity(SouthIndianCuisineActivity.class));
 
-        btnStreetFood.setOnClickListener(v -> {
-            Intent intent = new Intent(ThirdActivity.this, FoodDetailsActivity.class);
-            intent.putExtra("CATEGORY", "Street Food");
-            startActivity(intent);
-        });
+        btnStreetFood.setOnClickListener(v -> navigateToActivity(StreetFoodCuisineActivity.class));
 
-        btnNonVegetarian.setOnClickListener(v -> {
-            Intent intent = new Intent(ThirdActivity.this, FoodDetailsActivity.class);
-            intent.putExtra("CATEGORY", "Non-Vegetarian");
-            startActivity(intent);
-        });
+        btnNonVegetarian.setOnClickListener(v -> navigateToActivity(NonVegetarianCuisineActivity.class));
 
-        btnVegetarian.setOnClickListener(v -> {
-            Intent intent = new Intent(ThirdActivity.this, FoodDetailsActivity.class);
-            intent.putExtra("CATEGORY", "Vegetarian");
-            startActivity(intent);
-        });
+        btnVegetarian.setOnClickListener(v -> navigateToActivity(VegetarianCuisineActivity.class));
+    }
+
+    // Method to handle activity navigation
+    private void navigateToActivity(Class<?> targetActivity) {
+        Intent intent = new Intent(ThirdActivity.this, targetActivity);
+        startActivity(intent);
     }
 
     // Load the menu properly
