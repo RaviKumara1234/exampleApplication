@@ -1,121 +1,221 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:padding="16dp"
     android:background="#F5F5F5">
 
-    <!-- Welcome Text -->
-    <TextView
-        android:id="@+id/cuisineTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="North Indian Cuisine"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/black"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Food Image 1 -->
-    <ImageView
-        android:id="@+id/foodImage1"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/idli"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="idli"/>
+        android:orientation="vertical">
 
-    <!-- Food Image 2 -->
-    <ImageView
-        android:id="@+id/foodImage2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/chole"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="chole"/>
+        <TextView
+            android:id="@+id/cuisineTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="North Indian Cuisine"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
 
-    <!-- Food Image 3 -->
-    <ImageView
-        android:id="@+id/foodImage3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/jeerarice"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="jeerarice"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
 
-    <!-- Food Image 4 -->
-    <ImageView
-        android:id="@+id/foodImage4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/kheer"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="kheer"/>
+            <!-- Image 1 -->
+            <ImageView
+                android:id="@+id/foodImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/idli"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="idli"/>
+            <TextView
+                android:id="@+id/foodName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Idli"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-    <!-- Food Image 5 -->
-    <ImageView
-        android:id="@+id/foodImage5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/palakpaneer"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="palakpaneer"/>
+            <!-- Image 2 -->
+            <ImageView
+                android:id="@+id/foodImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/chole"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="chole"/>
+            <TextView
+                android:id="@+id/foodName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chole"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-    <!-- Food Image 6 -->
-    <ImageView
-        android:id="@+id/foodImage6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/naan"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="naan"/>
+            <!-- Image 3 -->
+            <ImageView
+                android:id="@+id/foodImage3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/jeerarice"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="jeerarice"/>
+            <TextView
+                android:id="@+id/foodName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jeera Rice"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-    <!-- Food Image 7 -->
-    <ImageView
-        android:id="@+id/foodImage7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/paneer"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="paneer"/>
+            <!-- Image 4 -->
+            <ImageView
+                android:id="@+id/foodImage4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kheer"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="kheer"/>
+            <TextView
+                android:id="@+id/foodName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kheer"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-    <!-- Food Image 8 -->
-    <ImageView
-        android:id="@+id/foodImage8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/tandoori"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="tandoori"/>
+            <!-- Image 5 -->
+            <ImageView
+                android:id="@+id/foodImage5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/palakpaneer"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="palakpaneer"/>
+            <TextView
+                android:id="@+id/foodName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Palak Paneer"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-    <!-- Food Image 9 -->
-    <ImageView
-        android:id="@+id/foodImage9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/vegbiriyani"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="vegbiriyani"/>
+            <!-- Image 6 -->
+            <ImageView
+                android:id="@+id/foodImage6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/naan"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="naan"/>
+            <TextView
+                android:id="@+id/foodName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Naan"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-    <!-- Food Image 10 -->
-    <ImageView
-        android:id="@+id/foodImage10"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/dhoklajpeg"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="dhoklajpeg"/>
+            <!-- Image 7 -->
+            <ImageView
+                android:id="@+id/foodImage7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/paneer"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="paneer"/>
+            <TextView
+                android:id="@+id/foodName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paneer"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
 
-</LinearLayout>
+            <!-- Image 8 -->
+            <ImageView
+                android:id="@+id/foodImage8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/tandoori"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="tandoori"/>
+            <TextView
+                android:id="@+id/foodName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tandoori"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 9 -->
+            <ImageView
+                android:id="@+id/foodImage9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/vegbiriyani"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="vegbiriyani"/>
+            <TextView
+                android:id="@+id/foodName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Veg Biriyani"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 10 -->
+            <ImageView
+                android:id="@+id/foodImage10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dhoklajpeg"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="dhoklajpeg"/>
+            <TextView
+                android:id="@+id/foodName10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dhokla"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
