@@ -1,8 +1,8 @@
 package com.example.exampleapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class NorthIndianCuisineActivity extends AppCompatActivity {
@@ -17,39 +17,65 @@ public class NorthIndianCuisineActivity extends AppCompatActivity {
             getSupportActionBar().setTitle("North Indian Cuisine");
         }
 
-        // Set the dynamic title in the layout (optional as it's already set in XML)
-        TextView cuisineTitle = findViewById(R.id.cuisineTitle);
-        cuisineTitle.setText("North Indian Cuisine");
-
-        // Set images dynamically using setImageResource()
+        // Set up onClickListeners for each ImageView (food item)
         ImageView foodImage1 = findViewById(R.id.foodImage1);
-        foodImage1.setImageResource(R.drawable.idli); // Replace with actual image resource
+        foodImage1.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, IdliRecipeActivity.class);
+            startActivity(intent);
+        });
 
-        ImageView foodImage2 = findViewById(R.id.foodImage2);
-        foodImage2.setImageResource(R.drawable.chole); // Replace with actual image resource
+       /* ImageView foodImage2 = findViewById(R.id.foodImage2);
+        foodImage2.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, CholeRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage3 = findViewById(R.id.foodImage3);
-        foodImage3.setImageResource(R.drawable.jeerarice); // Replace with actual image resource
+        foodImage3.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, JeeraRiceRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage4 = findViewById(R.id.foodImage4);
-        foodImage4.setImageResource(R.drawable.kheer); // Replace with actual image resource
+        foodImage4.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, KheerRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage5 = findViewById(R.id.foodImage5);
-        foodImage5.setImageResource(R.drawable.palakpaneer); // Replace with actual image resource
+        foodImage5.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, PalakPaneerRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage6 = findViewById(R.id.foodImage6);
-        foodImage6.setImageResource(R.drawable.naan); // Replace with actual image resource
+        foodImage6.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, NaanRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage7 = findViewById(R.id.foodImage7);
-        foodImage7.setImageResource(R.drawable.paneer); // Replace with actual image resource
+        foodImage7.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, PaneerRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage8 = findViewById(R.id.foodImage8);
-        foodImage8.setImageResource(R.drawable.tandoori); // Replace with actual image resource
+        foodImage8.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, TandooriRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage9 = findViewById(R.id.foodImage9);
-        foodImage9.setImageResource(R.drawable.vegbiriyani); // Replace with actual image resource
+        foodImage9.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, VegBiriyaniRecipeActivity.class);
+            startActivity(intent);
+        });
 
         ImageView foodImage10 = findViewById(R.id.foodImage10);
-        foodImage10.setImageResource(R.drawable.dhoklajpeg); // Replace with actual image resource
+        foodImage10.setOnClickListener(view -> {
+            Intent intent = new Intent(NorthIndianCuisineActivity.this, DhoklaRecipeActivity.class);
+            startActivity(intent);
+        });*/
     }
 }

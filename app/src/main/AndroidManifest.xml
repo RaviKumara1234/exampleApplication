@@ -36,6 +36,9 @@
         <activity android:name=".NonVegetarianCuisineActivity" />
         <activity android:name=".VegetarianCuisineActivity" />
 
+        <activity android:name=".IdliRecipeActivity"></activity>
+
+
     </application>
 
 </manifest>
