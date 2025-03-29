@@ -42,9 +42,109 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
     <string name="gulab_jamun">gulab_jamun</string>
     <string name="idli">idli</string>
     <string name="welcome_user">Welcome, User!</string>
     <string name="mochi_ice_cream">mochi_ice_cream</string>
     <string name="duck_confit">duck_confit</string>
+
+    <!-- Idli recipe procedure string -->
+    <string name="idli_recipe_procedure">
+        1. Soak rice and urad dal for 4-5 hours.\n\n
+        2. Grind them into a smooth batter.\n\n
+        3. Let the batter ferment overnight.\n\n
+        4. Heat the Idli steamer and grease the idli molds.\n\n
+        5. Pour the batter into the molds and steam for 10-15 minutes.\n\n
+        6. Serve with sambar and chutney.
+    </string>
+
+    <!-- Chole recipe procedure string -->
+    <string name="chole_recipe_procedure">
+        1. Soak chickpeas overnight and boil them.\n\n
+        2. In a pan, heat oil and add cumin seeds, bay leaves, and onions.\n\n
+        3. Add chopped tomatoes, ginger-garlic paste, and cook till soft.\n\n
+        4. Add spices (turmeric, garam masala, coriander powder, etc.) and mix well.\n\n
+        5. Add boiled chickpeas and cook for 10-15 minutes.\n\n
+        6. Garnish with coriander leaves and serve with bhature or rice.
+    </string>
+
+    <!-- Jeera Rice recipe procedure string -->
+    <string name="jeera_rice_recipe_procedure">
+        1. Heat oil in a pan and add cumin seeds.\n\n
+        2. Add chopped onions and sauté until golden.\n\n
+        3. Add chopped tomatoes and cook until soft.\n\n
+        4. Add rice, water, and salt. Stir well.\n\n
+        5. Cover and cook for 15-20 minutes on low heat.\n\n
+        6. Garnish with coriander leaves and serve hot.
+    </string>
+
+    <!-- Kheer recipe procedure string -->
+    <string name="kheer_recipe_procedure">
+        1. Heat milk in a pan and bring to a boil.\n\n
+        2. Add rice and cook for 15-20 minutes on low heat.\n\n
+        3. Add sugar and stir until it dissolves.\n\n
+        4. Add cardamom powder and dry fruits, mix well.\n\n
+        5. Cook for another 5-10 minutes.\n\n
+        6. Serve hot or chilled.
+    </string>
+
+    <!-- Palak Paneer recipe procedure string -->
+    <string name="palak_paneer_recipe_procedure">
+        1. Blanch spinach and puree it.\n\n
+        2. Heat oil in a pan and add cumin seeds.\n\n
+        3. Add onions and sauté until golden.\n\n
+        4. Add ginger-garlic paste and sauté.\n\n
+        5. Add the spinach puree, spices (turmeric, garam masala, etc.), and cook for 10 minutes.\n\n
+        6. Add cubed paneer, cook for 5 minutes, and serve hot.
+    </string>
+
+    <!-- Naan recipe procedure string -->
+    <string name="naan_recipe_procedure">
+        1. Mix flour, yeast, sugar, and salt in a bowl.\n\n
+        2. Add warm water and knead into a dough.\n\n
+        3. Let the dough rest for 1-2 hours to rise.\n\n
+        4. Roll the dough into small balls and flatten them.\n\n
+        5. Cook the naans on a hot griddle or tandoor.\n\n
+        6. Brush with butter and serve hot.
+    </string>
+
+    <!-- Paneer recipe procedure string -->
+    <string name="paneer_recipe_procedure">
+        1. Heat milk and bring it to a boil.\n\n
+        2. Add lemon juice or vinegar to curdle the milk.\n\n
+        3. Strain the curdled milk to separate the paneer.\n\n
+        4. Press the paneer to remove excess water.\n\n
+        5. Cube the paneer and use it in your recipe.
+    </string>
+
+    <!-- Tandoori recipe procedure string -->
+    <string name="tandoori_recipe_procedure">
+        1. Mix yogurt, ginger-garlic paste, and spices to make the marinade.\n\n
+        2. Coat the chicken (or vegetables) with the marinade and let it sit for 1-2 hours.\n\n
+        3. Preheat the oven or tandoor.\n\n
+        4. Skewer the chicken and cook until done.\n\n
+        5. Serve with naan and chutney.
+    </string>
+
+    <!-- Veg Biriyani recipe procedure string -->
+    <string name="veg_biriyani_recipe_procedure">
+        1. Soak basmati rice for 30 minutes.\n\n
+        2. Heat oil in a pan, add whole spices, and sauté.\n\n
+        3. Add onions and cook until golden.\n\n
+        4. Add chopped vegetables, and cook for 5-7 minutes.\n\n
+        5. Add rice, water, and spices, and cook until done.\n\n
+        6. Garnish with fried onions and serve hot.
+    </string>
+
+    <!-- Dhokla recipe procedure string -->
+    <string name="dhokla_recipe_procedure">
+        1. Mix rice flour, besan (gram flour), and spices in a bowl.\n\n
+        2. Add water and make a smooth batter.\n\n
+        3. Steam the batter in a greased pan for 15-20 minutes.\n\n
+        4. Let it cool and cut into squares.\n\n
+        5. Temper with mustard seeds, curry leaves, and green chilies.\n\n
+        6. Serve with green chutney.
+    </string>
+
 </resources>

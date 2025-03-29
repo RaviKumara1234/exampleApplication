@@ -24,13 +24,13 @@ public class NorthIndianCuisineActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-       /* ImageView foodImage2 = findViewById(R.id.foodImage2);
+      ImageView foodImage2 = findViewById(R.id.foodImage2);
         foodImage2.setOnClickListener(view -> {
             Intent intent = new Intent(NorthIndianCuisineActivity.this, CholeRecipeActivity.class);
             startActivity(intent);
         });
 
-        ImageView foodImage3 = findViewById(R.id.foodImage3);
+         ImageView foodImage3 = findViewById(R.id.foodImage3);
         foodImage3.setOnClickListener(view -> {
             Intent intent = new Intent(NorthIndianCuisineActivity.this, JeeraRiceRecipeActivity.class);
             startActivity(intent);
@@ -76,6 +76,6 @@ public class NorthIndianCuisineActivity extends AppCompatActivity {
         foodImage10.setOnClickListener(view -> {
             Intent intent = new Intent(NorthIndianCuisineActivity.this, DhoklaRecipeActivity.class);
             startActivity(intent);
-        });*/
+        });
     }
 }

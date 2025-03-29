@@ -6,7 +6,6 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Button;
-import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
@@ -21,13 +20,6 @@ public class ThirdActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        // Get username from intent
-        String username = getIntent().getStringExtra("USERNAME");
-
-        // Display username
-        TextView welcomeText = findViewById(R.id.welcomeText);
-        welcomeText.setText("Welcome, " + username + " to our App!");
-
         // Find buttons for food categories
         Button btnNorthIndian = findViewById(R.id.categoryNorthIndian);
         Button btnSouthIndian = findViewById(R.id.categorySouthIndian);
@@ -37,13 +29,9 @@ public class ThirdActivity extends AppCompatActivity {
 
         // Set click listeners for each category button
         btnNorthIndian.setOnClickListener(v -> navigateToActivity(NorthIndianCuisineActivity.class));
-
         btnSouthIndian.setOnClickListener(v -> navigateToActivity(SouthIndianCuisineActivity.class));
-
         btnStreetFood.setOnClickListener(v -> navigateToActivity(StreetFoodCuisineActivity.class));
-
         btnNonVegetarian.setOnClickListener(v -> navigateToActivity(NonVegetarianCuisineActivity.class));
-
         btnVegetarian.setOnClickListener(v -> navigateToActivity(VegetarianCuisineActivity.class));
     }
 
@@ -70,7 +58,17 @@ public class ThirdActivity extends AppCompatActivity {
             startActivity(new Intent(this, SettingsActivity.class));
             return true;
         } else if (id == R.id.action_profile) {
-            startActivity(new Intent(this, ProfileActivity.class));
+            // Retrieve user data passed to ThirdActivity
+            String username = getIntent().getStringExtra("USERNAME");
+            String phoneNumber = getIntent().getStringExtra("PHONE_NUMBER");
+            String address = getIntent().getStringExtra("ADDRESS");
+
+            // Create an Intent to navigate to ProfileActivity
+            Intent intent = new Intent(this, ProfileActivity.class);
+            intent.putExtra("USERNAME", username);  // Pass username to ProfileActivity
+            intent.putExtra("PHONE_NUMBER", phoneNumber);  // Pass phone number to ProfileActivity
+            intent.putExtra("ADDRESS", address);  // Pass address to ProfileActivity
+            startActivity(intent);  // Start ProfileActivity
             return true;
         } else if (id == R.id.action_logout) {
             finish(); // Close this activity (logout)

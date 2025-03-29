@@ -37,7 +37,15 @@
         <activity android:name=".VegetarianCuisineActivity" />
 
         <activity android:name=".IdliRecipeActivity"></activity>
-
+        <activity android:name=".CholeRecipeActivity"></activity>
+        <activity android:name=".JeeraRiceRecipeActivity"></activity>
+        <activity android:name=".KheerRecipeActivity"></activity>
+        <activity android:name=".PalakPaneerRecipeActivity"></activity>
+        <activity android:name=".NaanRecipeActivity"></activity>
+        <activity android:name=".PaneerRecipeActivity"></activity>
+        <activity android:name=".TandooriRecipeActivity"></activity>
+        <activity android:name=".VegBiriyaniRecipeActivity"></activity>
+        <activity android:name=".DhoklaRecipeActivity"></activity>
 
     </application>
 

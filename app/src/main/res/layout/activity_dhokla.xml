@@ -9,42 +9,38 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Idli Recipe"
-        android:textSize="24sp"
+        android:text="Dhokla Recipe"
+        android:textSize="22sp"
         android:textStyle="bold"
-        android:textColor="@android:color/holo_orange_dark"
-    android:gravity="center"
-    android:layout_marginBottom="16dp"/>
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
 
-    <!-- Idli Image -->
+    <!-- Dhokla Image -->
     <ImageView
-        android:id="@+id/idliImage"
+        android:id="@+id/dhoklaImage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:src="@drawable/idli"
-        android:contentDescription="Idli Image"
-        android:layout_marginBottom="16dp"/>
+        android:src="@drawable/dhoklajpeg"
+    android:contentDescription="Dhokla Image"
+    android:layout_marginBottom="16dp"/>
 
     <!-- Recipe Procedure -->
     <TextView
         android:id="@+id/recipeProcedure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingredients and Steps to make Idli:"
+        android:text="Ingredients and Steps to make Dhokla:"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/holo_green_dark"
-    android:layout_marginBottom="8dp"/>
+        android:layout_marginBottom="16dp"/>
 
     <!-- Add the Steps of the Recipe -->
     <TextView
         android:id="@+id/procedureSteps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/idli_recipe_procedure"
+        android:text="@string/dhokla_recipe_procedure"
     android:textSize="16sp"
     android:lineSpacingExtra="8dp"
-    android:textColor="@android:color/black"
     android:layout_marginBottom="16dp"/>
 
 </LinearLayout>
