@@ -5,6 +5,7 @@
     android:orientation="vertical"
     android:padding="16dp">
 
+    <!-- Username Input -->
     <EditText
         android:id="@+id/usernameInput"
         android:layout_width="match_parent"
@@ -15,6 +16,7 @@
         android:textColor="#333333"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Password Input -->
     <EditText
         android:id="@+id/passwordInput"
         android:layout_width="match_parent"
@@ -26,6 +28,7 @@
         android:inputType="textPassword"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Phone Number Input -->
     <EditText
         android:id="@+id/phoneNumberInput"
         android:layout_width="match_parent"
@@ -37,6 +40,7 @@
         android:inputType="phone"
         android:layout_marginBottom="16dp"/>
 
+    <!-- Address Input -->
     <EditText
         android:id="@+id/addressInput"
         android:layout_width="match_parent"
@@ -47,6 +51,7 @@
         android:textColor="#333333"
         android:layout_marginBottom="24dp"/>
 
+    <!-- Register Button -->
     <Button
         android:id="@+id/registerButton"
         android:layout_width="wrap_content"
@@ -58,6 +63,7 @@
         android:padding="12dp"
         android:textSize="16sp"/>
 
+    <!-- Help Text for Forgot Password -->
     <TextView
         android:id="@+id/helpText"
         android:layout_width="wrap_content"
@@ -69,5 +75,18 @@
         android:gravity="center"
         android:clickable="true"
         android:focusable="true"/>
+
+    <!-- Login Button for Already Registered Users -->
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already Registered? Login Here"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2196F3"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"/>
 
 </LinearLayout>

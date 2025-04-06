@@ -15,8 +15,9 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SecondActivity extends AppCompatActivity {
 
     private EditText usernameInput, passwordInput, phoneNumberInput, addressInput;
-    private Button registerButton;
+    private Button registerButton, loginButton;  // Declare Login Button as well
     private ProgressDialog progressDialog;
+    private DatabaseHelper databaseHelper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,9 +30,12 @@ public class SecondActivity extends AppCompatActivity {
         phoneNumberInput = findViewById(R.id.phoneNumberInput);
         addressInput = findViewById(R.id.addressInput);
         registerButton = findViewById(R.id.registerButton);
+        loginButton = findViewById(R.id.loginButton);  // Initialize Login Button
         progressDialog = new ProgressDialog(this);
         progressDialog.setMessage("Registering...");
         progressDialog.setCancelable(false);
+
+        databaseHelper = new DatabaseHelper(this);
 
         // Handle Register Button Click
         registerButton.setOnClickListener(new View.OnClickListener() {
@@ -56,17 +60,32 @@ public class SecondActivity extends AppCompatActivity {
                 } else {
                     progressDialog.show();
 
-                    // Simulate registration delay
+                    // Store user data in database
                     new Handler().postDelayed(new Runnable() {
                         @Override
                         public void run() {
                             progressDialog.dismiss();
+                            boolean isInserted = databaseHelper.insertUser(username, password, phoneNumber, address);
 
-                            // Show Registration Successful Dialog
-                            showRegistrationSuccessDialog(username, phoneNumber, address);
+                            if (isInserted) {
+                                // Show Registration Successful Dialog
+                                showRegistrationSuccessDialog(username, phoneNumber, address);
+                            } else {
+                                Toast.makeText(SecondActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
+                            }
                         }
                     }, 2000); // 2 seconds delay
                 }
+            }
+        });
+
+        // Handle Login Button Click
+        loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Start LoginActivity when Login button is clicked
+                Intent intent = new Intent(SecondActivity.this, LoginActivity.class);
+                startActivity(intent);
             }
         });
     }
@@ -79,11 +98,8 @@ public class SecondActivity extends AppCompatActivity {
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
-                        // Pass the user info to ThirdActivity
-                        Intent intent = new Intent(SecondActivity.this, ThirdActivity.class);
-                        intent.putExtra("USERNAME", username);
-                        intent.putExtra("PHONE_NUMBER", phoneNumber);
-                        intent.putExtra("ADDRESS", address);
+                        // Pass the user info to LoginActivity
+                        Intent intent = new Intent(SecondActivity.this, LoginActivity.class);
                         startActivity(intent);
                         finish(); // Close current activity
                     }
