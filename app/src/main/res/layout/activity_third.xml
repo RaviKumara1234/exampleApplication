@@ -28,6 +28,16 @@
         android:gravity="center"
         android:text="Welcome to Our App, Enjoy Exploring!"/>
 
+    <!-- Search Bar for Recipe -->
+    <AutoCompleteTextView
+        android:id="@+id/searchRecipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search for a recipe"
+        android:padding="12dp"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp" />
+
     <!-- Food category buttons -->
     <Button
         android:id="@+id/categoryNorthIndian"
@@ -67,17 +77,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Non-Vegetarian Cuisine"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#4CAF50"
-        android:textColor="#FFFFFF"
-        android:padding="12dp"
-        android:textSize="16sp"/>
-
-    <Button
-        android:id="@+id/categoryVegetarian"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Vegetarian Cuisine"
         android:layout_marginTop="16dp"
         android:backgroundTint="#4CAF50"
         android:textColor="#FFFFFF"

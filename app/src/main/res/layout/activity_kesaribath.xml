@@ -9,38 +9,31 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kheer Recipe"
+        android:text="Kesaribath Recipe"
         android:textSize="22sp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Kheer Image -->
+    <!-- Kesaribath Image -->
     <ImageView
-        android:id="@+id/kheerImage"
+        android:id="@+id/kesaribathImage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:src="@drawable/kheer"
-        android:contentDescription="Kheer Image"
+        android:src="@drawable/kesaribath"
+        android:contentDescription="Kesaribath Image"
         android:layout_marginBottom="16dp"/>
 
     <!-- Recipe Procedure -->
     <TextView
-        android:id="@+id/recipeProcedure"
+        android:id="@+id/kesaribathRecipeProcedure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingredients and Steps to make Kheer:"
+        android:text="Ingredients and Steps to make Kesaribath:"
         android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginBottom="8dp"/>
 
-    <!-- Add the Steps of the Recipe -->
-    <TextView
-        android:id="@+id/procedureSteps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/kheer_recipe_procedure"
-        android:textSize="16sp"
-        android:lineSpacingExtra="8dp"
-        android:layout_marginBottom="16dp"/>
 
 </LinearLayout>

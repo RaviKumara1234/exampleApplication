@@ -1,6 +1,202 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cuisineTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="South Indian Cuisine"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- Image 1: Appam -->
+            <ImageView
+                android:id="@+id/foodImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/appam"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="appam"/>
+            <TextView
+                android:id="@+id/foodName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appam"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 2: Cabbage Thoran -->
+            <ImageView
+                android:id="@+id/foodImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/cabbagethoran"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="cabbage thoran"/>
+            <TextView
+                android:id="@+id/foodName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cabbage Thoran"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 3: Venn Pongal -->
+            <ImageView
+                android:id="@+id/foodImage3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/vennpongal"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="venn pongal"/>
+            <TextView
+                android:id="@+id/foodName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Venn Pongal"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 4: Kesaribath -->
+            <ImageView
+                android:id="@+id/foodImage4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kesaribath"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="kesaribath"/>
+            <TextView
+                android:id="@+id/foodName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kesaribath"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 5: Rice Roti (Akki Rotti) -->
+            <ImageView
+                android:id="@+id/foodImage5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/riceroti"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="rice roti"/>
+            <TextView
+                android:id="@+id/foodName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rice Roti (Akki Rotti)"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 6: Lemon Rice -->
+            <ImageView
+                android:id="@+id/foodImage6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/lemonrice"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="lemon rice"/>
+            <TextView
+                android:id="@+id/foodName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lemon Rice"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 7: Ragi Mudde -->
+            <ImageView
+                android:id="@+id/foodImage7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/ragimudde"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="ragi mudde"/>
+            <TextView
+                android:id="@+id/foodName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ragi Mudde"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 8: Bisibele Bath -->
+            <ImageView
+                android:id="@+id/foodImage8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bisibelebath"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="bisibele bath"/>
+            <TextView
+                android:id="@+id/foodName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bisibele Bath"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Image 9: Dosa -->
+            <ImageView
+                android:id="@+id/foodImage9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dosa"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="dosa"/>
+            <TextView
+                android:id="@+id/foodName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dosa"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

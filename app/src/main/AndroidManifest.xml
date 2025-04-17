@@ -35,7 +35,6 @@
         <activity android:name=".SouthIndianCuisineActivity" />
         <activity android:name=".StreetFoodCuisineActivity" />
         <activity android:name=".NonVegetarianCuisineActivity" />
-        <activity android:name=".VegetarianCuisineActivity" />
 
         <activity android:name=".IdliRecipeActivity"></activity>
         <activity android:name=".CholeRecipeActivity"></activity>
@@ -47,6 +46,16 @@
         <activity android:name=".TandooriRecipeActivity"></activity>
         <activity android:name=".VegBiriyaniRecipeActivity"></activity>
         <activity android:name=".DhoklaRecipeActivity"></activity>
+
+        <activity android:name=".AppamRecipeActivity"></activity>
+        <activity android:name=".BisibeleBathRecipeActivity"></activity>
+        <activity android:name=".CabbageThoranRecipeActivity"></activity>
+        <activity android:name=".DosaRecipeActivity"></activity>
+        <activity android:name=".KesaribathRecipeActivity"></activity>
+        <activity android:name=".LemonRiceRecipeActivity"></activity>
+        <activity android:name=".RagiMuddeRecipeActivity"></activity>
+        <activity android:name=".RiceRotiRecipeActivity"></activity>
+        <activity android:name=".VennPongalRecipeActivity"></activity>
 
     </application>
 

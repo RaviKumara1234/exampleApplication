@@ -9,19 +9,19 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kheer Recipe"
+        android:text="Rice Roti (Akki Rotti) Recipe"
         android:textSize="22sp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Kheer Image -->
+    <!-- Rice Roti Image -->
     <ImageView
-        android:id="@+id/kheerImage"
+        android:id="@+id/riceRotiImage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:src="@drawable/kheer"
-        android:contentDescription="Kheer Image"
+        android:src="@drawable/riceroti"
+        android:contentDescription="Rice Roti Image"
         android:layout_marginBottom="16dp"/>
 
     <!-- Recipe Procedure -->
@@ -29,18 +29,9 @@
         android:id="@+id/recipeProcedure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingredients and Steps to make Kheer:"
+        android:text="Ingredients and Steps to make Rice Roti:"
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Add the Steps of the Recipe -->
-    <TextView
-        android:id="@+id/procedureSteps"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/kheer_recipe_procedure"
-        android:textSize="16sp"
-        android:lineSpacingExtra="8dp"
-        android:layout_marginBottom="16dp"/>
 
 </LinearLayout>
