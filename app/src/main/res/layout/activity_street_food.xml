@@ -1,6 +1,294 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cuisineTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Street Food Cuisine"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Image 1: Panipuri -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/panipuri"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="panipuri"/>
+
+            <TextView
+                android:id="@+id/foodName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Panipuri"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 2: Vadapav -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/vadapaav"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="vadapav"/>
+
+            <TextView
+                android:id="@+id/foodName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vadapav"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 3: Pavbhaji -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/pavbhaji"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="pavbhaji"/>
+
+            <TextView
+                android:id="@+id/foodName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pavbhaji"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 4: Samosa -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/samosa"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="samosa"/>
+
+            <TextView
+                android:id="@+id/foodName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Samosa"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 5: Chaat -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/chaat"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="chaat"/>
+
+            <TextView
+                android:id="@+id/foodName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chaat"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 6: Kebabs -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/kebabs"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="kebabs"/>
+
+            <TextView
+                android:id="@+id/foodName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kebabs"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 7: Bhelpuri -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/bhelpuri"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="bhelpuri"/>
+
+            <TextView
+                android:id="@+id/foodName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bhelpuri"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 8: Frankie -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/frankie"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="frankie"/>
+
+            <TextView
+                android:id="@+id/foodName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Frankie"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 9: Alootikki -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/alootikki"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="alootikki"/>
+
+            <TextView
+                android:id="@+id/foodName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alootikki"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 10: Eggroll -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/eggroll"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="eggroll"/>
+
+            <TextView
+                android:id="@+id/foodName10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eggroll"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

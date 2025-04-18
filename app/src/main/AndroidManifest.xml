@@ -57,6 +57,29 @@
         <activity android:name=".RiceRotiRecipeActivity"></activity>
         <activity android:name=".VennPongalRecipeActivity"></activity>
 
+        <activity android:name=".VadapavRecipeActivity" />
+        <activity android:name=".PavbhajiRecipeActivity" />
+        <activity android:name=".SamosaRecipeActivity" />
+        <activity android:name=".ChaatRecipeActivity" />
+        <activity android:name=".KebabsRecipeActivity" />
+        <activity android:name=".BhelpuriRecipeActivity" />
+        <activity android:name=".FrankieRecipeActivity" />
+        <activity android:name=".AlootikkiRecipeActivity" />
+        <activity android:name=".EggrollRecipeActivity" />
+        <activity android:name=".PanipuriRecipeActivity" />
+
+
+        <activity android:name=".ChickenTikkaRecipeActivity" />
+        <activity android:name=".ButterChickenRecipeActivity" />
+        <activity android:name=".MuttonKebabRecipeActivity" />
+        <activity android:name=".ChickenShawarmaRecipeActivity" />
+        <activity android:name=".EggCurryRecipeActivity" />
+        <activity android:name=".FishFryRecipeActivity" />
+        <activity android:name=".ChickenSukkaRecipeActivity" />
+        <activity android:name=".TandooriChickenRecipeActivity" />
+        <activity android:name=".BiryaniRecipeActivity" />
+        <activity android:name=".ChickenCurryRecipeActivity" />
+
     </application>
 
 </manifest>

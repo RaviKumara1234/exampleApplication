@@ -33,5 +33,13 @@
         android:textSize="18sp"
         android:layout_marginBottom="16dp"/>
 
-
+    <!--  Steps of the Recipe -->
+    <TextView
+        android:id="@+id/procedureSteps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bisibele_recipe_procedure"
+        android:textSize="16sp"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginBottom="16dp"/>
 </LinearLayout>

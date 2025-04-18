@@ -1,6 +1,294 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/cuisineTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Non-Vegetarian Cuisine"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Image 1: Chicken Tikka -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/chickentikka"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="chickentikka"/>
+
+            <TextView
+                android:id="@+id/foodName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Tikka"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 2: Butter Chicken -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/butterchicken"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="butterchicken"/>
+
+            <TextView
+                android:id="@+id/foodName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Butter Chicken"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 3: Mutton Kebab -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage3"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/muttonkebab"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="muttonkebab"/>
+
+            <TextView
+                android:id="@+id/foodName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mutton Kebab"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 4: Chicken Shawarma -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage4"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/chickenshawarma"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="chickenshawarma"/>
+
+            <TextView
+                android:id="@+id/foodName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Shawarma"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 5: Egg Curry -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage5"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/eggcurry"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="eggcurry"/>
+
+            <TextView
+                android:id="@+id/foodName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Egg Curry"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 6: Fish Fry -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage6"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/fishfry"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="fishfry"/>
+
+            <TextView
+                android:id="@+id/foodName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fish Fry"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 7: Chicken Sukka -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage7"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/chickensukka"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="chickensukka"/>
+
+            <TextView
+                android:id="@+id/foodName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Sukka"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 8: Tandoori Chicken -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage8"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/tandoorichicken"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="tandoorichicken"/>
+
+            <TextView
+                android:id="@+id/foodName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tandoori Chicken"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 9: Biryani -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage9"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/biryani"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="biryani"/>
+
+            <TextView
+                android:id="@+id/foodName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Biryani"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+        <!-- Image 10: Chicken Curry -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/foodImage10"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/chickencurry"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:contentDescription="chickencurry"/>
+
+            <TextView
+                android:id="@+id/foodName10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chicken Curry"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

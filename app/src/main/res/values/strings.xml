@@ -147,4 +147,300 @@
         6. Serve with green chutney.
     </string>
 
+    <string name="appam_recipe_procedure">
+        1. Soak 1 cup raw rice and 1/4 cup urad dal for 4-6 hours.\n
+        2. Grind to a smooth batter with a bit of cooked rice.\n
+        3. Add 1/2 tsp yeast and a pinch of sugar. Let it ferment overnight.\n
+        4. Add salt and a little coconut milk for softness.\n
+        5. Heat an appam pan, pour a ladle of batter, swirl and cook covered till edges are crisp.\n
+        6. Serve hot with stew or chutney.
+    </string>
+
+    <string name="bisibele_recipe_procedure">
+    1. Rinse 1/2 cup toor dal and pressure cook until soft.\n
+    2. Cook 1/2 cup rice separately and keep aside.\n
+    3. In a pan, heat oil and sauté chopped onions, carrots, beans, peas for 5–7 mins.\n
+    4. Add tamarind extract, salt, turmeric, and Bisibele Bath powder.\n
+    5. Mix in the cooked dal and vegetables. Let it simmer.\n
+    6. Add cooked rice and mix well. Adjust consistency with water.\n
+    7. Temper mustard seeds, curry leaves, dry red chilies in ghee and pour over the bath.\n
+    8. Serve hot with boondi or papad.
+</string>
+
+    <string name="cabbage_thoran_recipe_procedure">
+    1. Finely chop 2 cups of cabbage and keep aside.\n
+    2. Coarsely grind 1/2 cup grated coconut, 2 green chilies, 1/2 tsp cumin seeds, and 2 garlic cloves.\n
+    3. Heat 2 tsp coconut oil in a pan, splutter mustard seeds and curry leaves.\n
+    4. Add chopped onions (optional) and sauté till soft.\n
+    5. Add the cabbage and the coconut mixture, mix well.\n
+    6. Add salt and a splash of water, cover and cook on low flame till cabbage is soft.\n
+    7. Stir occasionally to prevent burning.\n
+    8. Once done, uncover and sauté for a minute. Serve hot with rice.
+</string>
+
+    <string name="venn_pongal_recipe_procedure">
+    1. Dry roast 1/2 cup moong dal till aromatic, then rinse.\n
+    2. Add 1/2 cup rice and 3 cups water to the dal, pressure cook for 4–5 whistles.\n
+    3. In a small pan, heat ghee and fry 1 tsp cumin seeds, 1/2 tsp black pepper, grated ginger, and cashews.\n
+    4. Add curry leaves and a pinch of asafoetida.\n
+    5. Pour the tempering over the cooked pongal, add salt and mix well.\n
+    6. Adjust consistency with hot water if needed.\n
+    7. Serve hot with coconut chutney or sambar.
+</string>
+
+    <string name="kesaribath_recipe_procedure">
+    1. Heat 2 tbsp ghee in a pan and roast 1/2 cup rava (semolina) until aromatic. Set aside.\n
+    2. In another pan, boil 1.5 cups water with a pinch of saffron and 1/4 tsp cardamom powder.\n
+    3. Slowly add the roasted rava to the boiling water while stirring to avoid lumps.\n
+    4. Cook on low flame till rava absorbs all the water.\n
+    5. Add 1/2 cup sugar and mix well till it melts.\n
+    6. Stir in 1 tbsp ghee and cook until the mixture thickens.\n
+    7. Fry cashews and raisins in ghee, then mix them into the kesaribath.\n
+    8. Serve warm garnished with more ghee or dry fruits if desired.
+</string>
+
+    <string name="rice_roti_recipe_procedure">
+    1. Mix 1 cup rice flour, 1/4 cup grated coconut, and salt in a large bowl.\n
+    2. Add water gradually and knead the dough until it’s smooth and pliable.\n
+    3. Divide the dough into small balls, then roll each ball into a thin circle.\n
+    4. Heat a tawa (griddle) and place the rolled dough on it. Cook on medium heat.\n
+    5. Drizzle a little oil around the edges and cook both sides till golden brown and crispy.\n
+    6. Serve hot with coconut chutney or sambar.
+</string>
+
+    <string name="lemon_rice_recipe_procedure">
+    1. Cook 1 cup rice and allow it to cool.\n
+    2. In a pan, heat 2 tbsp oil and fry 1 tsp mustard seeds, 1/2 tsp cumin seeds, and 2 dried red chilies.\n
+    3. Add a pinch of asafoetida and 10-12 curry leaves, then sauté for a minute.\n
+    4. Stir in 1/4 cup chopped onions and sauté till translucent.\n
+    5. Add 1/4 cup peanuts and fry for a few minutes.\n
+    6. Add 2 tbsp lemon juice, salt, and turmeric powder. Mix well.\n
+    7. Add the cooled rice and toss to coat evenly.\n
+    8. Serve hot with a side of yogurt or pickle.
+</string>
+
+    <string name="ragi_mudde_recipe_procedure">
+    1. In a pan, heat 2 cups of water and bring it to a boil.\n
+    2. Gradually add 1 cup of ragi flour, stirring constantly to prevent lumps.\n
+    3. Reduce the heat to low and cook, stirring continuously, until the mixture thickens and pulls away from the sides of the pan.\n
+    4. Once the mixture has thickened, remove it from heat and let it cool slightly.\n
+    5. Wet your hands and shape the dough into balls (mudde).\n
+    6. Serve the ragi mudde with sambar, curry, or a spicy chutney.
+</string>
+
+    <string name="dosa_recipe_procedure">
+    1. Soak 1 cup rice and 1/4 cup urad dal for 4-6 hours.\n
+    2. Grind the soaked ingredients to a smooth batter, adding water as needed.\n
+    3. Ferment the batter overnight in a warm place.\n
+    4. Heat a tawa (griddle) and pour a ladle of batter to spread it in a circular shape.\n
+    5. Drizzle oil around the edges and cook until crispy and golden brown.\n
+    6. Flip and cook the other side for a minute.\n
+    7. Serve hot with coconut chutney and sambar.
+</string>
+
+    <string name="vadapav_recipe_procedure">
+    1. Boil and mash 2 medium potatoes.\n
+    2. In a pan, heat oil, add mustard seeds, curry leaves, green chili, and ginger garlic paste.\n
+    3. Add turmeric and mashed potatoes, mix well and let it cool.\n
+    4. Shape into balls and dip in gram flour batter.\n
+    5. Deep fry until golden brown.\n
+    6. Toast pav with butter, apply green chutney and tamarind chutney.\n
+    7. Place vada inside and serve hot with fried green chili.
+</string>
+
+    <string name="pavbhaji_recipe_procedure">
+    1. Boil potatoes, peas, and cauliflower until soft.\n
+    2. In a pan, heat butter and sauté onions until golden.\n
+    3. Add chopped tomatoes, ginger garlic paste, and pav bhaji masala.\n
+    4. Mash the boiled veggies and add them to the pan.\n
+    5. Add water to adjust consistency and simmer for 10 minutes.\n
+    6. Toast pav with butter.\n
+    7. Serve hot bhaji with buttered pav, chopped onions, and lemon.
+</string>
+
+    <string name="samosa_recipe_procedure">
+    1. Prepare dough with maida, salt, and oil. Rest for 30 mins.\n
+    2. For filling, cook mashed potatoes with peas, spices, and coriander.\n
+    3. Divide dough, roll into ovals, cut in half, and shape into cones.\n
+    4. Stuff the cones with filling and seal the edges.\n
+    5. Deep fry on medium heat until golden and crisp.\n
+    6. Serve hot with mint and tamarind chutneys.
+</string>
+
+    <string name="chaat_recipe_procedure">
+    1. Arrange crushed puris or papdi in a plate.\n
+    2. Add boiled potatoes, chickpeas, and chopped onions.\n
+    3. Drizzle yogurt, green chutney, and tamarind chutney.\n
+    4. Sprinkle chaat masala, red chili powder, and cumin powder.\n
+    5. Garnish with sev, coriander leaves, and pomegranate.\n
+    6. Serve immediately before it gets soggy.
+</string>
+
+    <string name="kebabs_recipe_procedure">
+    1. Boil and mash potatoes, and add finely chopped vegetables.\n
+    2. Add bread crumbs, spices, and mix well.\n
+    3. Shape into kebabs or patties.\n
+    4. Shallow fry on a pan with oil until golden brown on both sides.\n
+    5. Serve hot with mint chutney and lemon wedges.
+</string>
+
+    <string name="bhelpuri_recipe_procedure">
+    1. In a bowl, mix puffed rice, chopped onions, tomatoes, and boiled potatoes.\n
+    2. Add green chutney, tamarind chutney, and a dash of lemon juice.\n
+    3. Sprinkle chaat masala and mix well.\n
+    4. Add sev just before serving to keep it crunchy.\n
+    5. Serve immediately as a quick snack.
+</string>
+
+    <string name="frankie_recipe_procedure">
+    1. Prepare a soft dough using whole wheat flour and let it rest.\n
+    2. Cook spiced mashed potato filling or use paneer/chicken.\n
+    3. Roll out roti and cook on a tawa, then spread egg if desired and cook.\n
+    4. Place filling, chopped onions, sauces, and roll tightly.\n
+    5. Toast lightly with butter and serve hot.
+</string>
+
+    <string name="alootikki_recipe_procedure">
+    1. Boil and mash potatoes, add green chili, coriander, and spices.\n
+    2. Shape into round tikkis and shallow fry until crispy.\n
+    3. Optionally stuff with green peas mixture.\n
+    4. Serve hot with chutneys or as part of a chaat with curd and masalas.
+</string>
+
+    <string name="eggroll_recipe_procedure">
+    1. Prepare a dough and roll into rotis. Cook on a tawa.\n
+    2. Beat eggs with salt and pour on the roti while cooking.\n
+    3. Flip and cook both sides.\n
+    4. Add onion slices, green chutney, ketchup, and roll tightly.\n
+    5. Wrap in paper and serve hot.
+</string>
+
+    <string name="panipuri_recipe_procedure">
+    1. Mix 1 cup semolina (sooji) and 1/4 cup all-purpose flour with water to form a stiff dough.\n
+    2. Roll into small discs and deep-fry until puffed and crispy to make puris.\n
+    3. Boil and mash 2 potatoes; mix with chopped onions, coriander, and spices.\n
+    4. For the pani, blend mint, coriander, green chilies, tamarind, black salt, and water.\n
+    5. Chill the spicy water (pani) before serving.\n
+    6. Crack the top of each puri and fill with potato mixture and sweet chutney.\n
+    7. Pour the spiced pani into the puris and serve immediately.
+</string>
+
+    <string name="chicken_tikka_recipe_procedure">
+    1. In a large bowl, combine yogurt, ginger-garlic paste, red chili powder, turmeric powder, garam masala, cumin powder, lemon juice, and salt to make the marinade.\n
+    2. Add the chicken pieces to the marinade and coat them well. Cover the bowl and refrigerate for at least 1 hour (overnight for better flavor).\n
+    3. Preheat the grill or oven to 200°C (400°F). If using a grill pan, heat it on medium-high.\n
+    4. Thread the marinated chicken pieces onto skewers.\n
+    5. Brush the chicken with a little oil and place it on the grill or in the oven.\n
+    6. Grill for 20-25 minutes or until the chicken is fully cooked and slightly charred at the edges, turning occasionally for even grilling.\n
+    7. Once done, remove the chicken from the skewers.\n
+    8. Serve hot with naan or rice, and garnish with fresh coriander and lemon wedges.\n
+    9. Enjoy your delicious Chicken Tikka!
+</string>
+
+    <string name="butter_chicken_recipe_procedure">
+    1. In a large bowl, combine yogurt, ginger-garlic paste, red chili powder, turmeric powder, garam masala, cumin powder, and salt to make the marinade.\n
+    2. Add the chicken pieces to the marinade and coat them well. Cover the bowl and refrigerate for at least 1 hour (overnight for better flavor).\n
+    3. Preheat the grill or oven to 200°C (400°F). If using a grill pan, heat it on medium-high.\n
+    4. Thread the marinated chicken pieces onto skewers.\n
+    5. Brush the chicken with a little oil and place it on the grill or in the oven.\n
+    6. Grill for 20-25 minutes or until the chicken is fully cooked and slightly charred at the edges, turning occasionally for even grilling.\n
+    7. Once done, remove the chicken from the skewers.\n
+    8. Prepare the rich butter sauce with tomatoes, cream, garlic, ginger, and spices.\n
+    9. Add the grilled chicken pieces into the sauce and simmer until fully coated and heated through.\n
+    10. Serve the butter chicken hot with naan or rice, garnished with fresh coriander.\n
+    11. Enjoy your creamy and delicious Butter Chicken!
+</string>
+
+    <string name="mutton_kebab_recipe_procedure">
+    1. Start by grinding mutton (preferably boneless) along with onions, garlic, ginger, green chilies, and a handful of coriander leaves into a fine paste.\n
+    2. Transfer the mixture to a large bowl and add garam masala, red chili powder, turmeric powder, cumin powder, and salt to taste.\n
+    3. Add a little beaten yogurt to the mixture and knead it into a smooth dough.\n
+    4. Divide the mixture into small portions and shape each portion into a round or oval kebab.\n
+    5. Heat a non-stick pan or grill and brush with oil.\n
+    6. Place the kebabs on the pan or grill, cooking them on medium heat for 8-10 minutes, turning occasionally until they are evenly browned and cooked through.\n
+    7. Garnish the mutton kebabs with finely chopped onions, coriander, and a squeeze of lime juice.\n
+    8. Serve hot with mint chutney and naan or rice.\n
+    9. Enjoy your flavorful Mutton Kebabs!
+</string>
+
+    <string name="chicken_shawarma_recipe_procedure">
+    1. Marinate 500g chicken strips with 1 cup yogurt, 1 tbsp lemon juice, 1 tbsp garlic paste, 1 tsp paprika, 1 tsp cumin, 1 tsp coriander, salt, and pepper.\n
+    2. Let it rest for at least 1-2 hours or overnight for best results.\n
+    3. Heat a pan or grill, drizzle a bit of oil, and cook the marinated chicken on medium heat until fully cooked and slightly charred.\n
+    4. Warm pita bread or flatbreads on a pan or in the oven.\n
+    5. Spread garlic sauce or tahini on the bread.\n
+    6. Add cooked chicken strips, shredded lettuce, sliced onions, tomatoes, and cucumbers.\n
+    7. Optionally, drizzle hot sauce or more garlic sauce on top.\n
+    8. Roll the bread into a wrap or fold like a sandwich.\n
+    9. Serve warm with fries or pickled vegetables.
+</string>
+
+    <string name="egg_curry_recipe_procedure">
+    1. Boil 4–6 eggs, peel them, and lightly score or prick them with a fork.\n
+    2. Heat 2 tbsp oil in a pan and lightly fry the boiled eggs until golden. Set aside.\n
+    3. In the same pan, add chopped onions and sauté until golden brown.\n
+    4. Add 1 tbsp ginger-garlic paste and cook for 1–2 minutes until fragrant.\n
+    5. Add 2 chopped tomatoes, 1/2 tsp turmeric, 1 tsp red chili powder, 1 tsp coriander powder, and salt. Cook until oil separates.\n
+    6. Add water as needed to make a curry base and bring it to a boil.\n
+    7. Add the fried eggs and let them simmer in the curry for 5–10 minutes.\n
+    8. Garnish with chopped coriander leaves.\n
+    9. Serve hot with steamed rice or roti.
+</string>
+
+    <string name="fish_fry_recipe_procedure">
+    1. Clean and cut 500g of fish into pieces. Pat them dry with a paper towel.\n
+    2. In a bowl, mix 1 tbsp red chili powder, 1/2 tsp turmeric, 1 tsp garam masala, 1 tbsp lemon juice, 1 tbsp ginger-garlic paste, and salt.\n
+    3. Rub the spice mixture evenly over the fish pieces and marinate for at least 30 minutes.\n
+    4. Heat oil in a frying pan over medium flame.\n
+    5. Once hot, gently place the marinated fish pieces into the oil.\n
+    6. Fry each side for 3–4 minutes or until golden brown and crispy.\n
+    7. Remove and place on paper towels to drain excess oil.\n
+    8. Serve hot with lemon wedges and sliced onions.
+</string>
+
+    <string name="chicken_sukka_recipe_procedure">
+    1. Heat 2 tbsp oil in a pan and add 1 tsp mustard seeds, 1 chopped onion, and curry leaves. Sauté until golden brown.\n
+    2. Add 1 tbsp ginger-garlic paste and fry for a minute.\n
+    3. Add 500g chicken pieces and cook until the color changes.\n
+    4. Add 1 tsp turmeric, 1 tbsp red chili powder, 1 tsp coriander powder, and salt. Mix well.\n
+    5. Cook covered on low heat until the chicken is tender (add a splash of water if needed).\n
+    6. Meanwhile, dry roast 2 tbsp grated coconut, 1 tsp fennel seeds, 1 tsp cumin, and a few black peppercorns. Grind into a coarse paste.\n
+    7. Add the coconut masala to the chicken and cook until dry and aromatic.\n
+    8. Garnish with chopped coriander and serve hot with rice or chapati.
+</string>
+
+    <string name="tandoori_chicken_recipe_procedure">
+    1. Clean and make deep cuts on 500g chicken pieces.\n
+    2. In a bowl, mix 1 cup yogurt, 1 tbsp ginger-garlic paste, 1 tbsp lemon juice, 1 tsp turmeric, 1 tbsp red chili powder, 1 tsp garam masala, and salt.\n
+    3. Rub the marinade all over the chicken, making sure it seeps into the cuts.\n
+    4. Cover and refrigerate for at least 4 hours or overnight for best results.\n
+    5. Preheat oven to 200°C (or prepare a grill/pan).\n
+    6. Bake or grill the chicken for 25–30 minutes, turning halfway through, until charred and cooked through.\n
+    7. Baste occasionally with butter or oil for extra flavor and moisture.\n
+    8. Serve hot with lemon wedges and onion rings.
+</string>
+
+    <string name="biryani_recipe_procedure">
+    1. Soak 2 cups basmati rice for 30 minutes, then boil until 70% cooked. Drain and set aside.\n
+    2. Marinate 500g chicken with 1 cup yogurt, 1 tbsp ginger-garlic paste, 1 tsp red chili powder, 1 tsp turmeric, 1 tsp garam masala, salt, and lemon juice. Let it rest for 1 hour.\n
+    3. In a large pan, heat oil and fry sliced onions until golden brown. Remove half for garnishing.\n
+    4. Add whole spices (bay leaf, cinnamon, cloves, cardamom) and sauté.\n
+    5. Add the marinated chicken and cook until tender and oil separates.\n
+    6. Layer partially cooked rice over the chicken, sprinkle fried onions, mint, coriander, and a few saffron strands soaked in milk.\n
+    7. Cover tightly with a lid or dough and cook on low heat (dum) for 20–25 minutes.\n
+    8. Gently mix before serving hot with raita or salad.
+</string>
+
+    <string name="chicken_curry_recipe_procedure">
+    1. Heat 2 tbsp oil in a pan and sauté 2 finely chopped onions until golden brown.\n
+    2. Add 1 tbsp ginger-garlic paste and cook until the raw smell disappears.\n
+    3. Add 2 chopped tomatoes and cook until soft.\n
+    4. Add 1 tsp red chili powder, 1/2 tsp turmeric, 1 tsp coriander powder, and salt to taste. Cook the masala well.\n
+    5. Add 500g cleaned chicken pieces and stir to coat with the masala.\n
+    6. Cover and cook for 10–15 minutes until chicken is tender.\n
+    7. Add 1/2 cup water (or as needed for gravy consistency) and simmer for another 10 minutes.\n
+    8. Sprinkle garam masala and fresh coriander leaves before serving hot with rice or roti.
+</string>
+
+
 </resources>
