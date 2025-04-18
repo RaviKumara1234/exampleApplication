@@ -35,6 +35,20 @@ public class ThirdActivity extends AppCompatActivity {
         // Initialize AutoCompleteTextView for recipe search
         searchRecipe = findViewById(R.id.searchRecipe);
 
+        // Handle clear icon click (X) inside the AutoCompleteTextView
+        searchRecipe.setOnTouchListener((v, event) -> {
+            final int DRAWABLE_RIGHT = 2; // Index for drawableEnd
+            if (event.getAction() == android.view.MotionEvent.ACTION_UP) {
+                if (searchRecipe.getCompoundDrawables()[DRAWABLE_RIGHT] != null &&
+                        event.getRawX() >= (searchRecipe.getRight() - searchRecipe.getCompoundDrawables()[DRAWABLE_RIGHT].getBounds().width() - searchRecipe.getPaddingEnd())) {
+                    searchRecipe.setText(""); // Clear the input text
+                    return true;
+                }
+            }
+            return false;
+        });
+
+
         // All recipe names
         String[] allRecipes = {
                 // North Indian
