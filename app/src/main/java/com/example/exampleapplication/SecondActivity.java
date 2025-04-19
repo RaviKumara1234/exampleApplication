@@ -100,6 +100,9 @@ public class SecondActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int which) {
                         // Pass the user info to LoginActivity
                         Intent intent = new Intent(SecondActivity.this, LoginActivity.class);
+                        intent.putExtra("USERNAME", username);
+                        intent.putExtra("PHONE_NUMBER", phoneNumber);
+                        intent.putExtra("ADDRESS", address);
                         startActivity(intent);
                         finish(); // Close current activity
                     }
