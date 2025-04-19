@@ -51,6 +51,7 @@ public class ThirdActivity extends AppCompatActivity {
         Button btnSouthIndian = findViewById(R.id.categorySouthIndian);
         Button btnStreetFood = findViewById(R.id.categoryStreetFood);
         Button btnNonVegetarian = findViewById(R.id.categoryNonVegetarian);
+        Button viewFavoritesButton = findViewById(R.id.viewFavoritesButton); // Added favorites button
 
         searchRecipe = findViewById(R.id.searchRecipe);
 
@@ -105,6 +106,12 @@ public class ThirdActivity extends AppCompatActivity {
         btnSouthIndian.setOnClickListener(v -> navigateToActivity(SouthIndianCuisineActivity.class));
         btnStreetFood.setOnClickListener(v -> navigateToActivity(StreetFoodCuisineActivity.class));
         btnNonVegetarian.setOnClickListener(v -> navigateToActivity(NonVegetarianCuisineActivity.class));
+
+        // ✅ View Favorites button click
+        viewFavoritesButton.setOnClickListener(v -> {
+            Intent intent = new Intent(ThirdActivity.this, FavoritesActivity.class);
+            startActivity(intent);
+        });
     }
 
     private void handleRecipeSelection(String selectedRecipe) {

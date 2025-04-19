@@ -1,46 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <!-- Recipe Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Panipuri Recipe"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Panipuri Image -->
-    <ImageView
-        android:id="@+id/panipuriImage"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/panipuri"
-        android:contentDescription="Panipuri Image"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Recipe Procedure -->
-    <TextView
-        android:id="@+id/recipeProcedure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingredients and Steps to make Panipuri:"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Add the Steps of the Recipe -->
-    <TextView
-        android:id="@+id/procedureSteps"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/panipuri_recipe_procedure"
-        android:textSize="16sp"
-        android:lineSpacingExtra="8dp"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
-</LinearLayout>
+        <!-- Recipe Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panipuri Recipe"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Panipuri Image -->
+        <ImageView
+            android:id="@+id/panipuriImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/panipuri"
+            android:contentDescription="Panipuri Image"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Recipe Procedure -->
+        <TextView
+            android:id="@+id/recipeProcedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients and Steps to make Panipuri:"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Add the Steps of the Recipe -->
+        <TextView
+            android:id="@+id/procedureSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/panipuri_recipe_procedure"
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Add to Favorites Button -->
+        <Button
+            android:id="@+id/addFavoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Favorites"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>

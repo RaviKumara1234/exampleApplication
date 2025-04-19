@@ -9,9 +9,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "user_database";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
-    // Table name and columns
+    // Users table columns
     public static final String TABLE_USERS = "users";
     public static final String COLUMN_ID = "id";
     public static final String COLUMN_USERNAME = "username";
@@ -19,8 +19,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_PHONE_NUMBER = "phone_number";
     public static final String COLUMN_ADDRESS = "address";
 
-    // SQL query to create the table
-    private static final String TABLE_CREATE =
+    // Favorites table columns
+    public static final String TABLE_FAVORITES = "favorites";
+    public static final String COLUMN_RECIPE_ID = "id";
+    public static final String COLUMN_RECIPE_NAME = "recipe_name";
+
+    // SQL queries to create tables
+    private static final String CREATE_USERS_TABLE =
             "CREATE TABLE " + TABLE_USERS + " (" +
                     COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                     COLUMN_USERNAME + " TEXT, " +
@@ -29,37 +34,44 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     COLUMN_ADDRESS + " TEXT" +
                     ");";
 
+    private static final String CREATE_FAVORITES_TABLE =
+            "CREATE TABLE " + TABLE_FAVORITES + " (" +
+                    COLUMN_RECIPE_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+                    COLUMN_RECIPE_NAME + " TEXT" +
+                    ");";
+
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(TABLE_CREATE); // Create table
+        // Create the users and favorites tables
+        db.execSQL(CREATE_USERS_TABLE);
+        db.execSQL(CREATE_FAVORITES_TABLE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        // Drop and recreate tables if database version changes
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_USERS);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_FAVORITES);
         onCreate(db);
     }
 
-    // Method to insert user data into the database
+    // Method to insert user data into the users table
     public boolean insertUser(String username, String password, String phoneNumber, String address) {
         SQLiteDatabase db = this.getWritableDatabase();
 
-        // Create content values to store the data
         ContentValues contentValues = new ContentValues();
         contentValues.put(COLUMN_USERNAME, username);
         contentValues.put(COLUMN_PASSWORD, password);
         contentValues.put(COLUMN_PHONE_NUMBER, phoneNumber);
         contentValues.put(COLUMN_ADDRESS, address);
 
-        // Insert the data and check if it was successful
         long result = db.insert(TABLE_USERS, null, contentValues);
         db.close();
 
-        // Return true if insertion was successful, false otherwise
         return result != -1;
     }
 
@@ -68,5 +80,43 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         String query = "SELECT * FROM " + TABLE_USERS + " WHERE " + COLUMN_USERNAME + " = ? AND " + COLUMN_PASSWORD + " = ?";
         return db.rawQuery(query, new String[]{username, password});
+    }
+
+    // Method to insert a favorite recipe into the favorites table
+    public boolean addFavoriteRecipe(String recipeName) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COLUMN_RECIPE_NAME, recipeName);
+
+        long result = db.insert(TABLE_FAVORITES, null, contentValues);
+        db.close();
+
+        return result != -1;
+    }
+
+    // Method to get all favorite recipes
+    public Cursor getAllFavoriteRecipes() {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT * FROM " + TABLE_FAVORITES;
+        return db.rawQuery(query, null);
+    }
+
+    // Method to check if a recipe is already added to favorites
+    public boolean isRecipeFavorite(String recipeName) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT * FROM " + TABLE_FAVORITES + " WHERE " + COLUMN_RECIPE_NAME + " = ?";
+        Cursor cursor = db.rawQuery(query, new String[]{recipeName});
+        boolean exists = cursor.getCount() > 0;
+        cursor.close();
+        return exists;
+    }
+
+    // Method to remove a favorite recipe
+    public boolean removeFavoriteRecipe(String recipeName) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        int rowsDeleted = db.delete(TABLE_FAVORITES, COLUMN_RECIPE_NAME + " = ?", new String[]{recipeName});
+        db.close();
+        return rowsDeleted > 0;
     }
 }

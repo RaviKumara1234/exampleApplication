@@ -80,6 +80,8 @@
         <activity android:name=".BiryaniRecipeActivity" />
         <activity android:name=".ChickenCurryRecipeActivity" />
 
+        <activity android:name=".FavoritesActivity"></activity>
+
     </application>
 
 </manifest>

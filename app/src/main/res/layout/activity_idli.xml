@@ -1,50 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <!-- Recipe Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Idli Recipe"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/holo_orange_dark"
-    android:gravity="center"
-    android:layout_marginBottom="16dp"/>
-
-    <!-- Idli Image -->
-    <ImageView
-        android:id="@+id/idliImage"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/idli"
-        android:contentDescription="Idli Image"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Recipe Procedure -->
-    <TextView
-        android:id="@+id/recipeProcedure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingredients and Steps to make Idli:"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:textColor="@android:color/holo_green_dark"
-    android:layout_marginBottom="8dp"/>
-
-    <!-- Add the Steps of the Recipe -->
-    <TextView
-        android:id="@+id/procedureSteps"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/idli_recipe_procedure"
-    android:textSize="16sp"
-    android:lineSpacingExtra="8dp"
-    android:textColor="@android:color/black"
-    android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
-</LinearLayout>
+        <!-- Recipe Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idli Recipe"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_orange_dark"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Idli Image -->
+        <ImageView
+            android:id="@+id/idliImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/idli"
+            android:contentDescription="Idli Image"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Recipe Procedure -->
+        <TextView
+            android:id="@+id/recipeProcedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients and Steps to make Idli:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Add the Steps of the Recipe -->
+        <TextView
+            android:id="@+id/procedureSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idli_recipe_procedure"
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Favorite Button -->
+        <Button
+            android:id="@+id/addFavoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Favorites"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+</ScrollView>

@@ -88,4 +88,16 @@
         android:padding="12dp"
         android:textSize="16sp"/>
 
+    <Button
+        android:id="@+id/viewFavoritesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Favorite Recipes"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#13309D"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:textSize="16sp"/>
+
+
 </LinearLayout>

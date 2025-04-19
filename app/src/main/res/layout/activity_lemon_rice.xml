@@ -1,47 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp">
+    android:layout_height="match_parent">
 
-    <!-- Recipe Title -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lemon Rice (Chitranna) Recipe"
-        android:textSize="22sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Lemon Rice Image -->
-    <ImageView
-        android:id="@+id/lemonRiceImage"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:src="@drawable/lemonrice"
-        android:contentDescription="Lemon Rice Image"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Recipe Procedure -->
-    <TextView
-        android:id="@+id/recipeProcedure"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ingredients and Steps to make Lemon Rice:"
-        android:textSize="18sp"
-        android:layout_marginBottom="16dp"/>
-
-    <!-- Steps of the Recipe -->
-    <TextView
-        android:id="@+id/lemonRiceProcedureSteps"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lemon_rice_recipe_procedure"
-        android:textSize="16sp"
-        android:lineSpacingExtra="8dp"
-        android:layout_marginBottom="16dp"/>
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center_horizontal">
 
+        <!-- Recipe Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lemon Rice (Chitranna) Recipe"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"/>
 
-</LinearLayout>
+        <!-- Lemon Rice Image -->
+        <ImageView
+            android:id="@+id/lemonRiceImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/lemonrice"
+            android:contentDescription="Lemon Rice Image"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Recipe Procedure -->
+        <TextView
+            android:id="@+id/recipeProcedure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ingredients and Steps to make Lemon Rice:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Steps of the Recipe -->
+        <TextView
+            android:id="@+id/lemonRiceProcedureSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lemon_rice_recipe_procedure"
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/addFavoriteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Favorites"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center_horizontal"/>
+
+    </LinearLayout>
+</ScrollView>
