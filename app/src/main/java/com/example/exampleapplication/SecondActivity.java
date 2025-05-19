@@ -17,7 +17,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity {
 
-    private EditText usernameInput, passwordInput, phoneNumberInput, addressInput;
+    private EditText usernameInput, passwordInput, phoneNumberInput, addressInput, emailInput;
     private Button registerButton, loginButton;
     private ProgressDialog progressDialog;
     private DatabaseHelper databaseHelper;
@@ -27,10 +27,12 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
+        // Initialize UI elements
         usernameInput = findViewById(R.id.usernameInput);
         passwordInput = findViewById(R.id.passwordInput);
         phoneNumberInput = findViewById(R.id.phoneNumberInput);
         addressInput = findViewById(R.id.addressInput);
+        emailInput = findViewById(R.id.emailInput);
         registerButton = findViewById(R.id.registerButton);
         loginButton = findViewById(R.id.loginButton);
         progressDialog = new ProgressDialog(this);
@@ -51,8 +53,9 @@ public class SecondActivity extends AppCompatActivity {
                 String password = passwordInput.getText().toString().trim();
                 String phoneNumber = phoneNumberInput.getText().toString().trim();
                 String address = addressInput.getText().toString().trim();
+                String email = emailInput.getText().toString().trim();
 
-                if (username.isEmpty() || password.isEmpty() || phoneNumber.isEmpty() || address.isEmpty()) {
+                if (username.isEmpty() || password.isEmpty() || phoneNumber.isEmpty() || address.isEmpty() || email.isEmpty()) {
                     Toast.makeText(SecondActivity.this, "Please fill in all fields", Toast.LENGTH_SHORT).show();
                 } else if (!username.matches("[a-zA-Z]+")) {
                     Toast.makeText(SecondActivity.this, "Username should only contain letters", Toast.LENGTH_SHORT).show();
@@ -62,6 +65,8 @@ public class SecondActivity extends AppCompatActivity {
                     Toast.makeText(SecondActivity.this, "Password should contain only alphanumeric characters", Toast.LENGTH_SHORT).show();
                 } else if (phoneNumber.length() != 10 || !phoneNumber.matches("[0-9]+")) {
                     Toast.makeText(SecondActivity.this, "Phone number should be 10 digits", Toast.LENGTH_SHORT).show();
+                } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
+                    Toast.makeText(SecondActivity.this, "Please enter a valid email address", Toast.LENGTH_SHORT).show();
                 } else {
                     progressDialog.show();
 
@@ -69,13 +74,12 @@ public class SecondActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             progressDialog.dismiss();
-                            boolean isInserted = databaseHelper.insertUser(username, password, phoneNumber, address);
+                            boolean isInserted = databaseHelper.insertUser(username, password, phoneNumber, address, email);
 
                             if (isInserted) {
-                                // Send SMS alert
                                 sendSMS(phoneNumber, "Hi " + username + ", your registration is successful!");
-
-                                showRegistrationSuccessDialog(username, phoneNumber, address);
+                                sendEmail(email, username); // <-- Send email notification
+                                showRegistrationSuccessDialog(username, phoneNumber, address, email);
                             } else {
                                 Toast.makeText(SecondActivity.this, "Registration Failed", Toast.LENGTH_SHORT).show();
                             }
@@ -94,10 +98,10 @@ public class SecondActivity extends AppCompatActivity {
         });
     }
 
-    private void showRegistrationSuccessDialog(String username, String phoneNumber, String address) {
+    private void showRegistrationSuccessDialog(String username, String phoneNumber, String address, String email) {
         new AlertDialog.Builder(this)
                 .setTitle("Registration Successful")
-                .setMessage("Welcome, " + username + "!\nPhone: " + phoneNumber + "\nAddress: " + address + "\nYour registration is successful.")
+                .setMessage("Welcome, " + username + "!\nPhone: " + phoneNumber + "\nAddress: " + address + "\nEmail: " + email + "\nYour registration is successful.")
                 .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -105,6 +109,7 @@ public class SecondActivity extends AppCompatActivity {
                         intent.putExtra("USERNAME", username);
                         intent.putExtra("PHONE_NUMBER", phoneNumber);
                         intent.putExtra("ADDRESS", address);
+                        intent.putExtra("EMAIL", email);
                         startActivity(intent);
                         finish();
                     }
@@ -117,10 +122,36 @@ public class SecondActivity extends AppCompatActivity {
         try {
             SmsManager smsManager = SmsManager.getDefault();
             smsManager.sendTextMessage(phoneNumber, null, message, null, null);
-            // No Toast here — silent send
         } catch (Exception e) {
-            e.printStackTrace(); // You may log this for debugging, but no Toast
+            e.printStackTrace();
+            Toast.makeText(SecondActivity.this, "Failed to send SMS.", Toast.LENGTH_SHORT).show();
         }
     }
 
+    private void sendEmail(String email, String username) {
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        intent.setType("message/rfc822");
+        intent.putExtra(Intent.EXTRA_EMAIL, new String[]{email});
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Registration Confirmation");
+        intent.putExtra(Intent.EXTRA_TEXT, "Hello " + username + ",\n\nThank you for registering. Your account has been successfully created!\n\n- Example App");
+
+        try {
+            startActivity(Intent.createChooser(intent, "Send email using..."));
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(this, "No email clients installed on your device.", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    // Handle permission result
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (requestCode == 1) {
+            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                Toast.makeText(this, "SMS Permission Granted", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(this, "SMS Permission Denied", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
 }

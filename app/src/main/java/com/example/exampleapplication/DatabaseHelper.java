@@ -9,7 +9,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class DatabaseHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "user_database";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 3;  // Updated version for email column
 
     // Users table columns
     public static final String TABLE_USERS = "users";
@@ -18,6 +18,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_PASSWORD = "password";
     public static final String COLUMN_PHONE_NUMBER = "phone_number";
     public static final String COLUMN_ADDRESS = "address";
+    public static final String COLUMN_EMAIL = "email";  // New column for email
 
     // Favorites table columns
     public static final String TABLE_FAVORITES = "favorites";
@@ -31,7 +32,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                     COLUMN_USERNAME + " TEXT, " +
                     COLUMN_PASSWORD + " TEXT, " +
                     COLUMN_PHONE_NUMBER + " TEXT, " +
-                    COLUMN_ADDRESS + " TEXT" +
+                    COLUMN_ADDRESS + " TEXT, " +
+                    COLUMN_EMAIL + " TEXT" +  // Add email column to the users table
                     ");";
 
     private static final String CREATE_FAVORITES_TABLE =
@@ -54,13 +56,14 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         // Drop and recreate tables if database version changes
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_USERS);
-        db.execSQL("DROP TABLE IF EXISTS " + TABLE_FAVORITES);
-        onCreate(db);
+        if (oldVersion < 3) {
+            // Add email column to the users table in case of an upgrade
+            db.execSQL("ALTER TABLE " + TABLE_USERS + " ADD COLUMN " + COLUMN_EMAIL + " TEXT");
+        }
     }
 
     // Method to insert user data into the users table
-    public boolean insertUser(String username, String password, String phoneNumber, String address) {
+    public boolean insertUser(String username, String password, String phoneNumber, String address, String email) {
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues contentValues = new ContentValues();
@@ -68,6 +71,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         contentValues.put(COLUMN_PASSWORD, password);
         contentValues.put(COLUMN_PHONE_NUMBER, phoneNumber);
         contentValues.put(COLUMN_ADDRESS, address);
+        contentValues.put(COLUMN_EMAIL, email);  // Insert email value
 
         long result = db.insert(TABLE_USERS, null, contentValues);
         db.close();
