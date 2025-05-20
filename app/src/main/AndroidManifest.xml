@@ -2,67 +2,77 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 🔐 Permissions -->
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.SEND_SMS" />
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.ExampleApplication"
         tools:targetApi="31">
 
+        <!-- ✅ Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAPk427_P0j6M96y-n2q0YV2RzEi3R_mN8" />
 
-        <activity
-            android:name=".SecondActivity"
-            android:exported="false"
+        <!-- Your Activities -->
+        <activity android:name=".SecondActivity" android:exported="false"
             android:theme="@style/Theme.ExampleApplication" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
+        <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Add your recipe and other activities as you had them -->
         <activity android:name=".ThirdActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ProfileActivity" />
         <activity android:name=".LogoutActivity" />
         <activity android:name=".LoginActivity" />
 
+        <!-- Cuisine Activities -->
         <activity android:name=".NorthIndianCuisineActivity" />
         <activity android:name=".SouthIndianCuisineActivity" />
         <activity android:name=".StreetFoodCuisineActivity" />
         <activity android:name=".NonVegetarianCuisineActivity" />
 
-        <activity android:name=".IdliRecipeActivity"></activity>
-        <activity android:name=".CholeRecipeActivity"></activity>
-        <activity android:name=".JeeraRiceRecipeActivity"></activity>
-        <activity android:name=".KheerRecipeActivity"></activity>
-        <activity android:name=".PalakPaneerRecipeActivity"></activity>
-        <activity android:name=".NaanRecipeActivity"></activity>
-        <activity android:name=".PaneerRecipeActivity"></activity>
-        <activity android:name=".TandooriRecipeActivity"></activity>
-        <activity android:name=".VegBiriyaniRecipeActivity"></activity>
-        <activity android:name=".DhoklaRecipeActivity"></activity>
+        <!-- Recipes -->
+        <activity android:name=".IdliRecipeActivity" />
+        <activity android:name=".CholeRecipeActivity" />
+        <activity android:name=".JeeraRiceRecipeActivity" />
+        <activity android:name=".KheerRecipeActivity" />
+        <activity android:name=".PalakPaneerRecipeActivity" />
+        <activity android:name=".NaanRecipeActivity" />
+        <activity android:name=".PaneerRecipeActivity" />
+        <activity android:name=".TandooriRecipeActivity" />
+        <activity android:name=".VegBiriyaniRecipeActivity" />
+        <activity android:name=".DhoklaRecipeActivity" />
 
-        <activity android:name=".AppamRecipeActivity"></activity>
-        <activity android:name=".BisibeleBathRecipeActivity"></activity>
-        <activity android:name=".CabbageThoranRecipeActivity"></activity>
-        <activity android:name=".DosaRecipeActivity"></activity>
-        <activity android:name=".KesaribathRecipeActivity"></activity>
-        <activity android:name=".LemonRiceRecipeActivity"></activity>
-        <activity android:name=".RagiMuddeRecipeActivity"></activity>
-        <activity android:name=".RiceRotiRecipeActivity"></activity>
-        <activity android:name=".VennPongalRecipeActivity"></activity>
+        <activity android:name=".AppamRecipeActivity" />
+        <activity android:name=".BisibeleBathRecipeActivity" />
+        <activity android:name=".CabbageThoranRecipeActivity" />
+        <activity android:name=".DosaRecipeActivity" />
+        <activity android:name=".KesaribathRecipeActivity" />
+        <activity android:name=".LemonRiceRecipeActivity" />
+        <activity android:name=".RagiMuddeRecipeActivity" />
+        <activity android:name=".RiceRotiRecipeActivity" />
+        <activity android:name=".VennPongalRecipeActivity" />
 
         <activity android:name=".VadapavRecipeActivity" />
         <activity android:name=".PavbhajiRecipeActivity" />
@@ -75,7 +85,6 @@
         <activity android:name=".EggrollRecipeActivity" />
         <activity android:name=".PanipuriRecipeActivity" />
 
-
         <activity android:name=".ChickenTikkaRecipeActivity" />
         <activity android:name=".ButterChickenRecipeActivity" />
         <activity android:name=".MuttonKebabRecipeActivity" />
@@ -87,7 +96,10 @@
         <activity android:name=".BiryaniRecipeActivity" />
         <activity android:name=".ChickenCurryRecipeActivity" />
 
-        <activity android:name=".FavoritesActivity"></activity>
+        <activity android:name=".FavoritesActivity" />
+
+        <!-- ✅ Add your Maps activity -->
+        <activity android:name=".MapsActivity" />
 
     </application>
 

@@ -45,9 +45,18 @@ dependencies {
     implementation(libs.navigation.ui)
     implementation(libs.navigation.runtime)
 
-    // Add Flexbox dependency here
+    // ✅ Google Maps + Location + Places API
+    implementation("com.google.android.gms:play-services-maps:18.1.0")       // Google Maps SDK
+    implementation("com.google.android.gms:play-services-location:21.0.1")    // Location services (for user's location)
+    implementation("com.google.android.libraries.places:places:3.4.0")        // Places API for search and place details
 
+    // Optional: Add Flexbox dependency here if required
+    // implementation("com.google.android.flexbox:flexbox:3.0.0")  // Uncomment if you need Flexbox
+
+    // Unit Testing
     testImplementation(libs.junit)
+
+    // Android Tests
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
